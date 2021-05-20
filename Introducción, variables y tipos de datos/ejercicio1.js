@@ -3,5 +3,5 @@ const edad;
 const peso;
 
 //imprimimos las dos variables y se nos muestra por consola
-console.log(edad)
-console.log(peso)
+console.log(edad);
+console.log(peso);
