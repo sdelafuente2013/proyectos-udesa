@@ -50,9 +50,9 @@ let ironMan = {
     equipo: "Avengers",
     poderes: ["Volar", "Lanzar misiles", "Disparar láser"],
     energia: 100,
-    
+
     //metodos
-    getPoder: function(numeroPoder = Math.floor(Math.random()*3)){
+    getPoder: function (numeroPoder = Math.floor(Math.random() * 3)) {
         console.log(`Usted eligio el poder: ${this.poderes[numeroPoder]}`)
         this.energia -= 10
         console.log(`Le queda ${this.energia} de energia`)
@@ -65,7 +65,7 @@ let hulk = {
     poderes: ["Aplastar", "Gritar", "Golpear"],
     energia: 100,
 
-    getPoder: function(numeroPoder = Math.floor(Math.random()*3)){
+    getPoder: function (numeroPoder = Math.floor(Math.random() * 3)) {
         console.log(`Usted eligio el poder: ${this.poderes[numeroPoder]}`)
         this.energia -= 10
         console.log(`Le queda ${this.energia} de energia`)
