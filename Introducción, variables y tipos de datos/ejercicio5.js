@@ -6,7 +6,7 @@ console.log(meGustaElHelado);
 
 let sumaTotal = 5 + 10; // resultado: 15
 let restaTotal = 20 - 5; // resultado: 15 
-let multiplicar = sumaTotal * restaTotal;// resultado: 225
+let multiplicar = sumaTotal * restaTotal; // resultado: 225
 let operacionBoolean = 2 > 1; // resultado: true
 let operacionBoolean2 = 1 > 1; // resultado: false   
 
