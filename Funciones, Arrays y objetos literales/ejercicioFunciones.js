@@ -51,5 +51,14 @@ function saberCantidadPalabra(palabra){
             contador++;
         };
     }
-    return contador;
+    return `La cantidad de palabras es: ${contador}`;
 }
+
+// 7) 
+
+function pesosAdolares(precio) {
+    const dolares = 94.22;
+    return `El resultado de la conversion de ARG $${precio} a USD es: ${precio/dolares}USD`;
+}
+
+
