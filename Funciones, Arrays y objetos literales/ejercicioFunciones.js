@@ -41,3 +41,15 @@ function buscarMiercoles(diasSemanales) {
         };
     };
 };
+
+// 6) 
+
+function saberCantidadPalabra(palabra){
+    let contador = 0;
+    for (let index = 0; index < palabra.length; index++) {
+        if (palabra[index] !== " "){
+            contador++;
+        };
+    }
+    return contador;
+}
