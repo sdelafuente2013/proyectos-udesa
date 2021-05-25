@@ -79,12 +79,31 @@ function mitad(numero) {
 function sumar(numero1, numero2) {
     return numero1 + numero2;
 };
+
 function restar(numero1, numero2) {
     return numero1 - numero2;
 };
+
 function multiplicar(numero1, numero2) {
     return numero1 * numero2;
 };
+
 function dividir(numero1, numero2) {
     return numero1 / numero2;
+};
+
+// Ejercicio complementario
+
+
+function anterior(numero) {
+    return numero - 1;
+};
+
+function triple(numero) {
+    return numero * 3;
+};
+
+function anteriorDelTriple(numero) {
+    console.log(`El numero recibido es: ${numero} y si lo multiplicapor por 3 da: ${triple(numero)}`);
+    console.log(`Y si le retamos uno da: ${anterior(numero)}`);
 };
