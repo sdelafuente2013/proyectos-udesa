@@ -68,4 +68,10 @@ function precioMasIva(precio) {
     return `El resultado del precio mas IVA 21% es: ${precio*21/100+precio}`;
 }
 
+// 9)
+
+function mitad(numero) {
+    return `La mitad del numero (${numero}) es: ${numero/2}`
+}
+
 
