@@ -61,4 +61,11 @@ function pesosAdolares(precio) {
     return `El resultado de la conversion de ARG $${precio} a USD es: ${precio/dolares}USD`;
 }
 
+// 8)
+
+function precioMasIva(precio) {
+    const IVA = 21;
+    return `El resultado del precio mas IVA 21% es: ${precio*21/100+precio}`;
+}
+
 
