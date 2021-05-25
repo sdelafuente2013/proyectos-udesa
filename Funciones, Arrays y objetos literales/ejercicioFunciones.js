@@ -44,15 +44,15 @@ function buscarMiercoles(diasSemanales) {
 
 // 6) 
 
-function saberCantidadPalabra(palabra){
+function saberCantidadPalabra(palabra) {
     let contador = 0;
     for (let index = 0; index < palabra.length; index++) {
-        if (palabra[index] !== " "){
+        if (palabra[index] !== " ") {
             contador++;
         };
-    }
+    };
     return `La cantidad de palabras es: ${contador}`;
-}
+};
 
 // 7) 
 
@@ -66,12 +66,25 @@ function pesosAdolares(precio) {
 function precioMasIva(precio) {
     const IVA = 21;
     return `El resultado del precio mas IVA 21% es: ${precio*21/100+precio}`;
-}
+};
 
 // 9)
 
 function mitad(numero) {
-    return `La mitad del numero (${numero}) es: ${numero/2}`
-}
+    return `La mitad del numero (${numero}) es: ${numero/2}`;
+};
 
+// 10)
 
+function sumar(numero1, numero2) {
+    return numero1 + numero2;
+};
+function restar(numero1, numero2) {
+    return numero1 - numero2;
+};
+function multiplicar(numero1, numero2) {
+    return numero1 * numero2;
+};
+function dividir(numero1, numero2) {
+    return numero1 / numero2;
+};
