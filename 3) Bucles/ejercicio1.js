@@ -24,3 +24,25 @@ for (let index = 0; index < 105; index += 5) {
 for (let index = 100; index >= 0; index--) {
     console.log(index)
 }
+
+
+// 2)
+
+let base = 2;
+let resultados = [];
+
+for (let index = 1; index <= 10; index++) {
+    resultados.push(base*index);   
+};
+
+console.log(resultados);
+
+
+
+// 3) 
+
+let ganancia = [1,2,3,4,5,6,7,8,9,10];
+let sumaTotal = 0;
+for (let index = 0; index < ganancia.length; index++) {
+    sumaTotal += ganancia[index]    
+}
