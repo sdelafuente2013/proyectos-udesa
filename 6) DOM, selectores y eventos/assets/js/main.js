@@ -15,4 +15,19 @@ window.addEventListener("load", function () {
         return coloresAzar[Math.floor(Math.random()*coloresAzar.length)]
     }
 
+    let caja1 = document.querySelector("#box1")
+    let caja2 = document.querySelector("#box2")
+    let caja3 = document.querySelector("#box3")
+
+    caja1.addEventListener("click", function(){
+        alert(`Clickeaste sobre ${this.querySelector("h3").innerHTML}`)
+    });
+
+    caja2.addEventListener("click", function(){
+        alert(`Clickeaste sobre ${this.querySelector("h3").innerHTML}`)
+    });
+
+    caja3.addEventListener("click", function(){
+        alert(`Clickeaste sobre ${this.querySelector("h3").innerHTML}`)
+    });
 })
