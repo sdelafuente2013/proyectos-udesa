@@ -1,9 +1,11 @@
 window.addEventListener('load', function () {
-	const prox = 'https://cors-anywhere.herokuapp.com/';
-	let api = `${prox}https://api.deezer.com/genre/`;
+	const proxy = 'https://cors-anywhere.herokuapp.com/';
+	let api = `${proxy}https://api.deezer.com/genre/`;
+	// let endpoint_artistas = `${proxy}___________________`;
 
 	fetch(api)
 		.then(function (response) {
+			// console.log(response);
 			return response.json();
 		})
 		.then(function (datos) {
@@ -13,6 +15,7 @@ window.addEventListener('load', function () {
 			let caja_2 = document.querySelector('#caja_2');
 			let caja_3 = document.querySelector('#caja_3');
 			let caja_4 = document.querySelector('#caja_4');
+			let limpiar = document.querySelector('#limpiar');
 
 			// Agregar imagenes a mi HMTL con el endpoint
 			caja_1.innerHTML += `
@@ -49,6 +52,10 @@ window.addEventListener('load', function () {
 			caja_4.addEventListener('click', function (e) {
 				e.preventDefault(); //sacarle el comportamiento por defecto(o de naturaleza)
 				localStorage.setItem('rock', JSON.stringify(`${datos.data[4].picture_medium}`));
+			});
+			limpiar.addEventListener('click', function (e) {
+				e.preventDefault();
+				localStorage.clear();
 			});
 		})
 		.catch(function (error) {
